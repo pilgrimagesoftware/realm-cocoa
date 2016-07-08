@@ -22,7 +22,8 @@ Pod::Spec.new do |s|
   s.preserve_paths            = %w(build.sh)
   
   s.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
-                            'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
+                            'APPLICATION_EXTENSION_API_ONLY' => 'YES',
+                                'SWIFT_VERSION' => '2.3' }
 
   s.ios.deployment_target     = '8.0'
   s.osx.deployment_target     = '10.9'
