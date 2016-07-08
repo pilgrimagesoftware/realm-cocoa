@@ -60,7 +60,8 @@ Pod::Spec.new do |s|
                                 'OTHER_CPLUSPLUSFLAGS' => '-std=c++1y $(inherited)',
                                 'APPLICATION_EXTENSION_API_ONLY' => 'YES',
                                 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Realm/include/core"',
-                                'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Realm/include" "${PODS_ROOT}/Realm/include/Realm"' }
+                                'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Realm/include" "${PODS_ROOT}/Realm/include/Realm"',
+				'SWIFT_VERSION' => '2.3' }
   s.preserve_paths          = %w(build.sh include)
 
   s.ios.deployment_target   = '7.0'
